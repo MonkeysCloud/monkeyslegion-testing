@@ -1,0 +1,34 @@
+{
+    "name": "monkeyscloud/monkeyslegion-testing",
+    "description": "Testing toolkit for MonKeysLegion — HTTP testing DSL, database traits, fake subsystems, snapshots.",
+    "license": "MIT",
+    "type": "library",
+    "require": {
+        "php": ">=8.4",
+        "phpunit/phpunit": "^11.0",
+        "monkeyscloud/monkeyslegion-core": "*@dev",
+        "monkeyscloud/monkeyslegion-database": "*@dev",
+        "monkeyscloud/monkeyslegion-http": "*@dev",
+        "monkeyscloud/monkeyslegion-auth": "*@dev",
+        "monkeyscloud/monkeyslegion-queue": "*@dev",
+        "monkeyscloud/monkeyslegion-mail": "*@dev",
+        "monkeyscloud/monkeyslegion-cli": "*@dev",
+        "monkeyscloud/monkeyslegion-di": "*@dev",
+        "monkeyscloud/monkeyslegion-router": "*@dev"
+    },
+    "require-dev": {
+        "monkeyscloud/monkeyslegion-migration": "*@dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "MonkeysLegion\\Testing\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "MonkeysLegion\\Testing\\Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
